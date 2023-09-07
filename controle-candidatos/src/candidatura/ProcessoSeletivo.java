@@ -6,17 +6,9 @@ import java.util.Random;
 public class ProcessoSeletivo {
 
 	public static void main(String[] args) {
-			//salario base maior que salario pretendido
-			//case1(2000.0, 1900.0);
 			
-			//salario base igual que salario pretendido
-			//case1(2000.0, 2000.0);
-			
-			//salario base igual que salario pretendido
-			//case1(1900.0, 2000.0);
-			
-			String [] candidatosSelecionados = {"FELIPE","M¡RCIA","JULIA","PAULO","AUGUSTO"};
-			//primeiro um for para selecionar os candidatos
+			String [] candidatosSelecionados = {"FELIPE","M√ÅRCIA","JULIA","PAULO","AUGUSTO"};
+
 			for(String candidato: candidatosSelecionados) {
 				entrandoEmContato(candidato);
 		}
@@ -38,27 +30,23 @@ public class ProcessoSeletivo {
 		if(atendeu)
 				System.out.println("CONSEGUIMOS CONTATO COM " + candidato +" NA " + tentativasRealizadas + " TENTATIVA");
 		else
-				System.out.println("N√O CONSEGUIMOS CONTATO COM " + candidato +", N⁄MERO MAXIMO TENTATIVAS " + tentativasRealizadas + " REALIZADA");
+				System.out.println("N√ÉO CONSEGUIMOS CONTATO COM " + candidato +", N√öMERO MAXIMO TENTATIVAS " + tentativasRealizadas + " REALIZADA");
 	}				
 			
-	//mÈtodo auxiliar
+	//metodo auxiliar
 	static boolean atender() {
 		return new Random().nextInt(3)==1;	
 	}
 
 	static void imprimirSelecionados() {
-		String[] candidatosSelecionados = { "FELIPE", "M¡RCIA", "JULIA", "PAULO", "AUGUSTO" };
+		String[] candidatosSelecionados = { "FELIPE", "M√ÅRCIA", "JULIA", "PAULO", "AUGUSTO" };
 
-		// forma indexada
-		// quando preciso do indice para complementar a lÛgica
-		System.out.println("Imprimindo com a ordem de seleÁ„o pelo Ìndice");
+		System.out.println("Imprimindo com a ordem de selec√£o pelo √≠ndice");
 		for (int x = 0; x < candidatosSelecionados.length; x++) {
-			System.out.println((x + 1) + "∞ Candidato È " + candidatosSelecionados[x]);
+			System.out.println((x + 1) + "¬∫ Candidato √© " + candidatosSelecionados[x]);
 		}
 
-		// forma abrevida
-		// interaÁ„o total sem precisar da posiÁ„o ou indice
-		System.out.println("Imprimindo todos sem a necessidade de exibir o Ìndice");
+		System.out.println("Imprimindo todos sem a necessidade de exibir o √≠ndice");
 
 		for (String candidato : candidatosSelecionados) {
 			System.out.println(candidato);
@@ -68,16 +56,16 @@ public class ProcessoSeletivo {
 
 	static void selecionarCandidatos() {
 		double salarioBase = 2000.0;
-		String[] candidatos = { "FELIPE", "M¡RCIA", "JULIA", "PAULO", "AUGUSTO", "M‘NICA", "FABRÕCIO", "MIRELA",
+		String[] candidatos = { "FELIPE", "M√ÅRCIA", "JULIA", "PAULO", "AUGUSTO", "M√îNICA", "FABR√çCIO", "MIRELA",
 				"DANIELA", "JORGE" };
 		int totalSelecionados = 0;
 		int proximoCandidato = 0;
 		while (totalSelecionados < 5 && proximoCandidato < candidatos.length) {
 			String candidato = candidatos[proximoCandidato++];
 			double valorPretendido = valorPretendido();
-			System.out.println("O candidato " + candidato + " est· pedindo " + valorPretendido);
+			System.out.println("O candidato " + candidato + " est√° pedindo " + valorPretendido);
 			if (valorPretendido > salarioBase) {
-				System.out.println("QUE PENA!! O candidato " + candidato + " N√O foi selecionado ");
+				System.out.println("QUE PENA!! O candidato " + candidato + " N√ÉO foi selecionado ");
 
 			} else {
 				System.out.println("LEGAL!! O candidato " + candidato + " foi selecionado ");
