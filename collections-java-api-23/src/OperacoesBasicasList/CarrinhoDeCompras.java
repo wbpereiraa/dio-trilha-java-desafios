@@ -67,7 +67,7 @@ public class CarrinhoDeCompras {
 		//EXIBINDO LISTA ATUALIZADA
 		listaitem.exibirItens();
 		//CALCULANDO VALOR TOTAL DAS COMPRAS
-		listaitem.calcularValorTotal();
+		System.out.println("O valor total das compras é de R$" + listaitem.calcularValorTotal() + ".");
 		
 		
 	}
