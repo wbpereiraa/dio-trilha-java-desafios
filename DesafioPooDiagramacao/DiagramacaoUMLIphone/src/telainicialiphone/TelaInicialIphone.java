@@ -1,4 +1,4 @@
-package multifuncional;
+package telainicialiphone;
 
 import aparelho.AparelhoTelefonico;
 import navegador.NavegadorInternet;
